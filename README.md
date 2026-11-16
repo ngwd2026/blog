@@ -1,0 +1,1 @@
+# 慢读手记\n\n中文阅读与思考博客。首页使用静态 HTML、CSS 和 JavaScript；文章以 Markdown 单篇文件保存在 `content/posts/`。\n\n推送到 `main` 后，GitHub Actions 会部署到 GitHub Pages。当前网页编辑器的自动保存使用浏览器本地存储；编辑后的文章可以导出为 Markdown 文件，再加入 `content/posts/`。\n
