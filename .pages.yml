@@ -1,3 +1,10 @@
+media:
+  - name: content_images
+    label: 文章图片
+    input: content/images
+    output: /blog/content/images
+    extensions: [png, jpg, jpeg, gif, webp]
+    rename: safe
 content:
   - name: posts
     label: 文章
@@ -32,5 +39,6 @@ content:
         options:
           format: markdown
           switcher: true
-          media: false
+          media: content_images
+          path: content/images
 
