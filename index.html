@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="一间记录阅读、思考与表达的小小书房。">
+  <title>慢读手记 · 阅读与思考</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="慢读手记首页"><span class="brand-mark">M.</span><span>慢读手记</span></a>
+    <nav aria-label="主导航"><a class="nav-link active" href="#essays">文章</a><a class="nav-link" href="#about">关于</a><a class="nav-link" href="#reading">在读</a></nav>
+    <div class="top-actions"><button class="appearance-button" id="appearance-toggle" aria-label="外观设置">Aa <span>外观</span></button><a class="write-link" href="mailto:hello@example.com?subject=写一封信">写信给我 <span>↗</span></a></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> 一间还在生长的书房</p>
+        <h1>把读过的，<br><em>慢慢想清楚。</em></h1>
+        <p class="intro">读书不是为了记住更多，而是为了看见更多。这里收集阅读留下的问题、答案，以及答案之外的东西。</p>
+        <a class="text-cta" href="#essays">从最近的文章开始 <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="书页与茶杯的抽象插画" role="img">
+        <div class="sun"></div><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="book book-back"></div><div class="book book-front"><i></i><i></i><i></i><b></b></div>
+        <div class="cup"><div class="cup-handle"></div><div class="tea"></div></div>
+        <span class="art-note note-a">VOL. 01</span><span class="art-note note-b">留一点空白</span>
+        <span class="spark spark-a">✳</span><span class="spark spark-b">✳</span>
+      </div>
+      <div class="hero-foot"><span>阅读 · 思考 · 写作</span><span>更新于 2026 / 11</span></div>
+    </section>
+
+    <section class="content-section" id="essays">
+      <div class="section-heading"><div><p class="eyebrow">THE NOTEBOOK</p><h2>最近写下的</h2></div><div class="heading-actions"><span class="count" id="post-count">03 篇记录</span><button class="write-button" id="new-post">＋ 写一篇</button><button class="backup-button" id="import-posts">导入 .md</button><input type="file" id="markdown-files" accept=".md,text/markdown" multiple hidden><button class="backup-button" id="backup-posts" title="导出文章备份">备份</button></div></div>
+      <div class="filter-row"><div class="filters" id="filters" role="group" aria-label="筛选文章"></div><label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="搜索标题、摘要和正文…" aria-label="搜索文章"></label></div>
+      <div class="post-list" id="post-list">
+        <article class="post-card" data-category="读书笔记" data-title="把问题问好，比急着找答案更重要">
+          <a href="#article-question" class="post-main"><div class="post-meta"><span class="tag">读书笔记</span><span>2026.11.12</span><span>6 分钟</span></div><h3>把问题问好，比急着找答案更重要</h3><p>读《学会提问》：一个好问题如何改变我们理解信息的方式？从“这是真的吗”开始，练习给观点找依据。</p><span class="read-more">阅读全文 <b>↗</b></span></a><div class="post-visual visual-question"><span>问</span><i>“</i><small>ASK BETTER</small></div>
+        </article>
+        <article class="post-card" data-category="思考练习" data-title="我为什么总想把事情一次做对">
+          <a href="#article-perfect" class="post-main"><div class="post-meta"><span class="tag tag-rose">思考练习</span><span>2026.11.05</span><span>4 分钟</span></div><h3>我为什么总想把事情一次做对</h3><p>完美主义看起来像高标准，有时却只是害怕开始。试着把“做得好”拆成几个可以行动的小步骤。</p><span class="read-more">阅读全文 <b>↗</b></span></a><div class="post-visual visual-lines"><span>先写下来</span><i></i><i></i><i></i><small>FIRST, BEGIN.</small></div>
+        </article>
+        <article class="post-card" data-category="读书笔记" data-title="注意力，是一种可以练习的选择">
+          <a href="#article-attention" class="post-main"><div class="post-meta"><span class="tag">读书笔记</span><span>2026.10.28</span><span>5 分钟</span></div><h3>注意力，是一种可以练习的选择</h3><p>读《深度工作》：与其责怪自己分心，不如先看看环境如何悄悄拿走了我们的注意力。</p><span class="read-more">阅读全文 <b>↗</b></span></a><div class="post-visual visual-sun"><div></div><span>专注<br>当下</span><small>ONE THING AT A TIME</small></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>没有找到这篇文章，试试别的关键词？</p>
+      <div class="pagination" id="pagination" aria-label="文章分页"></div>
+    </section>
+
+    <section class="practice" id="reading"><div class="practice-icon">✳</div><div><p class="eyebrow">A SMALL PRACTICE</p><h2>读完之后，<br class="mobile-break">给自己十分钟。</h2><p>写下一个观点、一条理由、一个你还没想明白的问题。思考从这里开始。</p></div><a href="mailto:hello@example.com?subject=我的十分钟写作">开始写一段 <span>↗</span></a></section>
+    <section class="about-section" id="about"><div class="about-label"><p class="eyebrow">A NOTE FROM THE AUTHOR</p><span>01 / ABOUT</span></div><div><h2>你好，我是这里的<br>读者、提问者和记录者。</h2><p>我相信，表达能力不是天赋，是把模糊的想法一次次说清楚的过程。这个小小的角落，记录我读书、思考，也记录我慢慢成为自己的过程。</p><a href="mailto:hello@example.com">想聊聊？给我写信 ↗</a></div><div class="about-stamp">读<br>而<br>后<br>思</div></section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">M.</span><span>慢读手记</span></a><span>愿你读得自在，写得坦诚。</span><span>© 2026 · 用心记录</span></footer>
+
+  <dialog id="article-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="关闭">×</button><div class="dialog-body"><p class="eyebrow" id="dialog-meta"></p><h2 id="dialog-title"></h2><div class="dialog-content" id="dialog-content"></div><p class="dialog-signoff">慢慢读，慢慢想。<span>✳</span></p><button class="edit-article" id="edit-article">编辑这篇文章 ↗</button></div></dialog>
+  <dialog id="editor-dialog" aria-labelledby="editor-heading"><button class="dialog-close editor-close" aria-label="关闭">×</button><form id="editor-form" class="editor-form"><p class="eyebrow">YOUR NOTEBOOK</p><h2 id="editor-heading">写一篇新文章</h2><label>标题<input id="article-title" name="title" maxlength="100" required placeholder="给这篇文章一个标题"></label><div class="editor-meta-fields"><label>分类<input id="article-category" name="category" list="category-options" value="读书笔记" required placeholder="选择或输入新分类"><datalist id="category-options"><option>读书笔记</option><option>思考练习</option><option>随手记录</option></datalist></label><label>日期<input id="article-date" name="date" type="date" required></label></div><label>摘要<textarea id="article-summary" name="summary" rows="2" maxlength="220" placeholder="用一两句话介绍这篇文章"></textarea></label><div class="markdown-toolbar"><span>正文 · Markdown</span><div><button type="button" data-insert="**粗体**">B</button><button type="button" data-insert="*斜体*"><i>I</i></button><button type="button" data-insert="# 标题">H</button><button type="button" data-insert="- 列表项">• 列表</button><button type="button" id="toggle-preview">预览</button></div></div><label class="body-label"><textarea id="article-body" name="body" rows="12" required placeholder="# 一个标题\n\n从一个问题、一条观点或一个例子开始……\n\n- 可以使用列表\n- **支持粗体**、引用和代码"></textarea><div id="markdown-preview" class="markdown-preview" hidden></div></label><p class="editor-save-note"><span class="save-dot"></span>自动保存在这台设备的浏览器中 · 可导出为独立 .md 文件</p><div class="editor-actions"><button type="button" class="export-one">导出 .md</button><button type="button" class="cancel-edit">取消</button><button type="submit" class="save-article">保存文章</button></div></form></dialog>
+  <dialog id="appearance-dialog" aria-labelledby="appearance-heading"><button class="dialog-close appearance-close" aria-label="关闭">×</button><div class="appearance-panel"><p class="eyebrow">MAKE IT YOURS</p><h2 id="appearance-heading">阅读外观</h2><label>字体<select id="font-choice"><option value="serif">宋体风格</option><option value="sans">清爽黑体</option><option value="system">系统默认</option></select></label><label>字号 <span id="font-size-label">100%</span><input id="font-size" type="range" min="90" max="120" step="5" value="100"></label><fieldset><legend>页面背景</legend><div class="swatches"><button class="swatch selected" data-theme="paper" aria-label="暖白" title="暖白"></button><button class="swatch" data-theme="sage" aria-label="浅绿" title="浅绿"></button><button class="swatch" data-theme="sand" aria-label="浅沙" title="浅沙"></button><button class="swatch" data-theme="night" aria-label="深色" title="深色"></button></div></fieldset><button id="reset-appearance" class="reset-appearance">恢复默认</button></div></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
+
