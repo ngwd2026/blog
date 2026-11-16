@@ -31,6 +31,9 @@ content:
       - name: summary
         label: 摘要
         type: text
+      - name: coverImage
+        label: 封面图片
+        type: image
       - name: body
         label: 正文
         type: rich-text
