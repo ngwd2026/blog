@@ -45,6 +45,7 @@ for (const name of files) {
     date: fallbackDate,
     category: fields.category || '随手记录',
     summary: fields.summary || body.slice(0, 120),
+    coverImage: fields.coverImage || '',
     body,
     minutes: Math.max(1, Math.ceil(body.length / 300)),
     createdAt: git.createdAt || fallbackDate,
