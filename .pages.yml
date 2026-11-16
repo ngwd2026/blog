@@ -1,3 +1,4 @@
+# Reload Pages CMS media configuration
 media:
   - name: content_images
     label: 文章图片
